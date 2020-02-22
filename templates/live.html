@@ -8,44 +8,138 @@
 </head>
 <body><h1><center>OTV.watch - Alpha! :)</h1></center>
 <h3><center>By <a href="https://twitter.com/stressed_tech">Daf</a>. Any queries, DM or email daf@daf.lol.</h3></center>
-{% if monstercat == True %} 
-<div id="monstercat-streaming" align="center"><a href="https://twitch.tv/Monstercat"><h5><b>Monstercat</b></a> is streaming!</h5>
-    <div id="twitch-player-monstercat"></div>
-        <!--Load Twitch embed nonsense-->
+{% if poki == True %} 
+<div id="pokimane-streaming" align="center"><a href="https://twitch.tv/pokimane"><h5><b>Pokimane</b></a> is streaming!</h5>
+    <div id="twitch-player-pokimane"></div>
         <!--Create Twitch embed window-->
         <script type="text/javascript">
             var winheight = $(window).height();
             var properheight = winheight*0.65;
             var winwidth = $(window).width();
             var properwidth = winwidth*0.65  ;
-            new Twitch.Embed("twitch-player-monstercat", {
+            new Twitch.Embed("twitch-player-pokimane", {
                 width: properwidth,
                 height: properheight,
-                channel: "monstercat",
+                channel: "pokimane",
                 muted: true,
                 autoplay: true
             });
         </script>
     </div>
 {% endif %}
-{% if tpp == True %} 
-<div id="tpp-streaming" align="center"><a href="https://twitch.tv/twitchplayspokemon"><h5><b>TwitchPlaysPokemon</b></a> is streaming!</h5>
-    <div id="twitch-player-tpp"></div>
-        <!--Load Twitch embed nonsense-->
+{% if scarra == True %} 
+<div id="scarra-streaming" align="center"><a href="https://twitch.tv/scarra"><h5><b>Scarra</b></a> is streaming!</h5>
+    <div id="twitch-player-scarra"></div>
         <!--Create Twitch embed window-->
         <script type="text/javascript">
             var winheight = $(window).height();
             var properheight = winheight*0.65;
             var winwidth = $(window).width();
             var properwidth = winwidth*0.65  ;
-            new Twitch.Embed("twitch-player-tpp", {
+            new Twitch.Embed("twitch-player-scarra", {
                 width: properwidth,
                 height: properheight,
-                channel: "twitchplayspokemon",
+                channel: "scarra",
                 muted: true,
                 autoplay: true
             });
         </script>
     </div>
 {% endif %}
+{% if lily == True %} 
+<div id="lilypichu-streaming" align="center"><a href="https://twitch.tv/lilypichu"><h5><b>lilypichu</b></a> is streaming!</h5>
+    <div id="twitch-player-lilypichu"></div>
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65  ;
+            new Twitch.Embed("twitch-player-lilypichu", {
+                width: properwidth,
+                height: properheight,
+                channel: "lilypichu",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
+{% endif %}
+{% if fed == True %} 
+<div id="fedmyster-streaming" align="center"><a href="https://twitch.tv/fedmyster"><h5><b>fedmyster</b></a> is streaming!</h5>
+    <div id="twitch-player-fedmyster"></div>
+        <!--Load Twitch embed nonsense-->
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65;
+            new Twitch.Embed("twitch-player-fedmyster", {
+                width: properwidth,
+                height: properheight,
+                channel: "fedmyster",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
+{% if yvonne == True %} 
+<div id="yvonnie-streaming" align="center"><a href="https://twitch.tv/yvonnie"><h5><b>yvonnie</b></a> is streaming!</h5>
+    <div id="twitch-player-yvonnie"></div>
+        <!--Load Twitch embed nonsense-->
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65;
+            new Twitch.Embed("twitch-player-yvonnie", {
+                width: properwidth,
+                height: properheight,
+                channel: "yvonnie",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
+{% endif %}
+{% if yvonne == True %} 
+<div id="yvonnie-streaming" align="center"><a href="https://twitch.tv/yvonnie"><h5><b>yvonnie</b></a> is streaming!</h5>
+    <div id="twitch-player-yvonnie"></div>
+        <!--Load Twitch embed nonsense-->
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65;
+            new Twitch.Embed("twitch-player-yvonnie", {
+                width: properwidth,
+                height: properheight,
+                channel: "yvonnie",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
+{% endif %}
+{% endif %}
+<div align="center"><h5>Not streaming:</h5>
+{% if not poki %}
+<h6>Pokimane is busy moderating r/WallStreetBets.</h6>
+{% endif %}
+{% if not scarra %}
+<h6>Scarra is busy crying at losing $1000 to Lily.</h6>
+{% endif %}
+{% if not lily %}
+<h6>Lily is busy cuddling Temmie, getting love-electrocuted by Michael and collecting her $1000 from Scarra.</h6>
+{% endif %}
+{% if not fed %}
+<h6>Fed is busy editing!</h6>
+{% endif %}
+{% if not yvonne %}
+<h6>Yvonne has gone on a Starbucks run. Did you remember your loyalty card, Yvonne?</h6>
+{% endif %}
+</div>
 </body>

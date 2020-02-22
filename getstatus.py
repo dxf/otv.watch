@@ -1,0 +1,15 @@
+import twitch
+helix = twitch.Helix('lr8ok7604ketqe6qq5kq1bdieibcpu')
+poki = bool(helix.user('pokimane').is_live)
+scarra = bool(helix.user('scarra').is_live)
+lily = bool(helix.user('lilypichu').is_live)
+fed = bool(helix.user('fedmyster').is_live)
+yvonne = bool(helix.user('yvonnie').is_live)
+monstercat = bool(helix.user('monstercat').is_live)
+with open('current.py','w') as current:
+    current.write(f'poki = {poki}\n')
+    current.write(f'scarra = {scarra}\n')
+    current.write(f'lily = {lily}\n')
+    current.write(f'fed = {fed}\n')
+    current.write(f'monstercat = {monstercat}\n')
+    current.write(f'yvonne = {yvonne}')
