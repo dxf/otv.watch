@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<title>OTV.watch Alpha!</title>
+</head>
+<body><h1><center>OTV.watch - Alpha! :)</h1></center>
+<h3><center>By <a href="https://twitter.com/stressed_tech">Daf</a>. Any queries, DM or email daf@daf.lol.</h3></center>
+{% if monstercat == True %} 
+<div id="monstercat-streaming" align="center"><a href="https://twitch.tv/Monstercat"><h5><b>Monstercat</b></a> is streaming!</h5>
+    <div id="twitch-player-monstercat"></div>
+        <!--Load Twitch embed nonsense-->
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65  ;
+            new Twitch.Embed("twitch-player-monstercat", {
+                width: properwidth,
+                height: properheight,
+                channel: "monstercat",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
+{% endif %}
+{% if tpp == True %} 
+<div id="tpp-streaming" align="center"><a href="https://twitch.tv/twitchplayspokemon"><h5><b>TwitchPlaysPokemon</b></a> is streaming!</h5>
+    <div id="twitch-player-tpp"></div>
+        <!--Load Twitch embed nonsense-->
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65  ;
+            new Twitch.Embed("twitch-player-tpp", {
+                width: properwidth,
+                height: properheight,
+                channel: "twitchplayspokemon",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
+{% endif %}
+</body>
