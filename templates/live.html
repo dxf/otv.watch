@@ -85,25 +85,6 @@
             });
         </script>
     </div>
-{% if yvonne == True %} 
-<div id="yvonnie-streaming" align="center"><a href="https://twitch.tv/yvonnie"><h5><b>yvonnie</b></a> is streaming!</h5>
-    <div id="twitch-player-yvonnie"></div>
-        <!--Load Twitch embed nonsense-->
-        <!--Create Twitch embed window-->
-        <script type="text/javascript">
-            var winheight = $(window).height();
-            var properheight = winheight*0.65;
-            var winwidth = $(window).width();
-            var properwidth = winwidth*0.65;
-            new Twitch.Embed("twitch-player-yvonnie", {
-                width: properwidth,
-                height: properheight,
-                channel: "yvonnie",
-                muted: true,
-                autoplay: true
-            });
-        </script>
-    </div>
 {% endif %}
 {% if yvonne == True %} 
 <div id="yvonnie-streaming" align="center"><a href="https://twitch.tv/yvonnie"><h5><b>yvonnie</b></a> is streaming!</h5>
@@ -125,6 +106,45 @@
         </script>
     </div>
 {% endif %}
+{% if yvonne == True %} 
+<div id="yvonnie-streaming" align="center"><a href="https://twitch.tv/yvonnie"><h5><b>yvonnie</b></a> is streaming!</h5>
+    <div id="twitch-player-yvonnie"></div>
+        <!--Load Twitch embed nonsense-->
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65;
+            new Twitch.Embed("twitch-player-yvonnie", {
+                width: properwidth,
+                height: properheight,
+                channel: "yvonnie",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
+{% endif %}
+{% if monstercat == True %} 
+<div id="monstercat-streaming" align="center"><a href="https://twitch.tv/monstercat"><h5><b>monstercat</b></a> is streaming!</h5>
+    <div id="twitch-player-monstercat"></div>
+        <!--Load Twitch embed nonsense-->
+        <!--Create Twitch embed window-->
+        <script type="text/javascript">
+            var winheight = $(window).height();
+            var properheight = winheight*0.65;
+            var winwidth = $(window).width();
+            var properwidth = winwidth*0.65;
+            new Twitch.Embed("twitch-player-monstercat", {
+                width: properwidth,
+                height: properheight,
+                channel: "monstercat",
+                muted: true,
+                autoplay: true
+            });
+        </script>
+    </div>
 {% endif %}
 <div align="center"><h5>Not streaming:</h5>
 {% if not poki %}

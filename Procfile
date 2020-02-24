@@ -1,1 +1,1 @@
-web: python live.py
+web: gunicorn run:app
