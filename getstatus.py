@@ -1,6 +1,7 @@
 import requests
+import auth
 headers = {
-    'Authorization': 'Bearer txsm06jq4bzk6ikd7fnx1rtqmns2qz',
+    'Authorization': auth.auth,
     'Client-ID': 'lr8ok7604ketqe6qq5kq1bdieibcpu',
 }
 
