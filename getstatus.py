@@ -1,7 +1,7 @@
 import requests
 auth = "oi478t74omaycl9hqss08v4422cce9"
 headers = {
-    'Authorization': auth.auth,
+    'Authorization': auth,
     'Client-ID': 'lr8ok7604ketqe6qq5kq1bdieibcpu',
 }
 
